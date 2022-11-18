@@ -2,7 +2,8 @@
 <%= form_with model: @indicated_value, local: true do |f| %>
   <div class="field">
     <%= f.label :image, "機器番号の画像" %>
-    <%= f.file_field :images, multiple: true %>
+    <%= f.file_field :images, multiple: true, id:"equipment-image" %>
+    <div id="equipment-view_box"></div>
   </div>
   <div class="field">
     <%= f.label :equipment_number, "機器番号" %>
@@ -14,7 +15,8 @@
   </div>
   <div class="field">
     <%= f.label :image, "値の画像" %>
-    <%= f.file_field :images, multiple: true %>
+    <%= f.file_field :images, multiple: true, id:"instruction-image" %>
+    <div id="instruction-view_box"></div>
   </div>
   <div class="field">
     <%= f.label :instruction, "指示値" %>
