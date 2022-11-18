@@ -1,4 +1,5 @@
 class IndicatedValue < ApplicationRecord
+  has_one_attached :image
 
   with_options presence: true do
     validates :equipment_number
