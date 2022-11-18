@@ -9,7 +9,7 @@ class IndicatedValuesController < ApplicationController
   def create
     @indicated_value = IndicatedValue.new(indicated_value_params)
     if @indicated_value.save
-      redirect_to root_path
+      redirect_to new_indicated_value_path
     else
       render :new
     end
