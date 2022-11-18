@@ -1,6 +1,10 @@
 <h1>情報を入力して下さい</h1>
 <%= form_with model: @indicated_value, local: true do |f| %>
   <div class="field">
+    <%= f.label :image, "機器番号の画像" %>
+    <%= f.file_field :images, multiple: true %>
+  </div>
+  <div class="field">
     <%= f.label :equipment_number, "機器番号" %>
     <%= f.text_field :equipment_number %>
   </div>
@@ -10,7 +14,7 @@
   </div>
   <div class="field">
     <%= f.label :image, "値の画像" %>
-    <%= f.file_field :image %>
+    <%= f.file_field :images, multiple: true %>
   </div>
   <div class="field">
     <%= f.label :instruction, "指示値" %>
