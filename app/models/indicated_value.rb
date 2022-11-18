@@ -1,0 +1,2 @@
+class IndicatedValue < ApplicationRecord
+end
