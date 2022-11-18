@@ -10,8 +10,10 @@
     <%= f.text_field :equipment_number %>
   </div>
   <div class="field">
-    <%= f.label :instrument_type, "計器型" %>
-    <%= f.text_field :instrument_type %>
+    <% ["圧力","温度","電流","その他"].each do |instrument_type| %>
+      <%= f.check_box :instrument_type, {multiple: true}, instrument_type, nil %>
+      <%= instrument_type %>
+    <% end %>
   </div>
   <div class="field">
     <%= f.label :image, "値の画像" %>

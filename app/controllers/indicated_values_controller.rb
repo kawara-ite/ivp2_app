@@ -18,6 +18,6 @@ class IndicatedValuesController < ApplicationController
   private
 
   def indicated_value_params
-    params.require(:indicated_value).permit(:equipment_number, :instrument_type, :instruction, images: [])
+    params.require(:indicated_value).permit(:equipment_number, :instruction, images: [], instrument_type: [])
   end
 end
