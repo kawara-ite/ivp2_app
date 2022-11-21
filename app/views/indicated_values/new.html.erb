@@ -2,8 +2,16 @@
 <%= form_with model: @indicated_value, local: true do |f| %>
   <div class="field">
     <%= f.label :image, "機器番号の画像" %>
-    <%= f.file_field :images, multiple: true, id:"equipment-image" %>
-    <div id="equipment-view_box"></div>
+    <%= f.file_field :images, multiple: true, id:"equipment-image-file" %>
+    <div id="equipment-file-view_box"></div>
+  </div>
+  <div class="field">
+    <div id="attachment">
+    <span>機器番号の画像</span>
+    <label><input type="file" accept="image/*" capture="camera" id="equipment-image-camera" >カメラ起動</label>
+    <span class="filename">選択されていません</span>
+    </div>
+    <div id="equipment-camera-view_box"></div>
   </div>
   <div class="field">
     <%= f.label :equipment_number, "機器番号" %>
