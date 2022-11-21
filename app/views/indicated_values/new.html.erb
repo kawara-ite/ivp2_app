@@ -25,8 +25,16 @@
   </div>
   <div class="field">
     <%= f.label :image, "値の画像" %>
-    <%= f.file_field :images, multiple: true, id:"instruction-image" %>
-    <div id="instruction-view_box"></div>
+    <%= f.file_field :images, multiple: true, id:"instruction-image-file" %>
+    <div id="instruction-file-view_box"></div>
+  </div>
+  <div class="field">
+    <div id="attachment">
+    <span>値の画像</span>
+    <label><input type="file" accept="image/*" capture="camera" id="instruction-image-camera" >カメラ起動</label>
+    <span class="filename">選択されていません</span>
+    </div>
+    <div id="instruction-camera-view_box"></div>
   </div>
   <div class="field">
     <%= f.label :instruction, "指示値" %>
