@@ -19,7 +19,6 @@ http://
 
 # アプリケーションを作成した背景
 アナログメータを作業員が読み取り・記録しているが、現場での作業時間削減や、記入モレ＆誤記をなくすために作成した。  
-[![Image from Gyazo](https://i.gyazo.com/e929e3fb1d32417ffe26d0fc2ea51c1a.png)](https://gyazo.com/e929e3fb1d32417ffe26d0fc2ea51c1a)
 
 # 洗い出した要件
 [要件定義シート](https://docs.google.com/spreadsheets/d/1OfVnfMn3xicJdfNOWnvwagiJ2g-e1j8dqMf1R05AAqk/edit#gid=982722306)
